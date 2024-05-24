@@ -1,15 +1,4 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-window.onload = function() {
-  document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#the-excuse").innerHTML = generateExcuse();
-  });
-
-  console.log("Hello Andrea from the console!");
-};
-let generateExcuse = () => {
+export let generateExcuse = () => {
   let who = ["The dog", "My grandma", "The mailman", "My son"];
   let action = ["ate", "peed", "crushed", "broke"];
   let what = ["my homework", "my phone", "the car"];
